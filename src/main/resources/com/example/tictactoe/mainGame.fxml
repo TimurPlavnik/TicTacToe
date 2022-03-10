@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<FlowPane orientation="VERTICAL" prefHeight="186.0" prefWidth="186.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.Controller">
+    <StackPane>
+        <ImageView>
+            <Image url="C:/Users/Тимур/Desktop/TicTacToe/field.png" />
+        </ImageView>
+        <HBox spacing="13">
+            <VBox spacing="13">
+                <padding>
+                    <Insets left="5" top="5" />
+                </padding>
+                <Button fx:id="TopLeft" onAction="#TopLeftButtonClick" prefHeight="50" prefWidth="50" text=" " />
+                <Button fx:id="MiddleLeft" onAction="#MiddleLeftButtonClick" prefHeight="50" prefWidth="50" text=" " />
+                <Button fx:id="BottomLeft" onAction="#BottomLeftButtonClick" prefHeight="50" prefWidth="50" text=" " />
+            </VBox>
+            <VBox spacing="13">
+                <padding>
+                    <Insets top="5" />
+                </padding>
+                <Button fx:id="TopMiddle" onAction="#TopMiddleButtonClick" prefHeight="50" prefWidth="50" text=" " />
+                <Button fx:id="MiddleMiddle" onAction="#MiddleMiddleButtonClick" prefHeight="50" prefWidth="50" text=" " />
+                <Button fx:id="BottomMiddle" onAction="#BottomMiddleButtonClick" prefHeight="50" prefWidth="50" text=" " />
+            </VBox>
+            <VBox spacing="13">
+                <padding>
+                    <Insets top="5" />
+                </padding>
+                <Button fx:id="TopRight" onAction="#TopRightButtonClick" prefHeight="50" prefWidth="50" text=" " />
+                <Button fx:id="MiddleRight" onAction="#MiddleRightButtonClick" prefHeight="50" prefWidth="50" text=" " />
+                <Button fx:id="BottomRight" onAction="#BottomRightButtonClick" prefHeight="50" prefWidth="50" text=" " />
+            </VBox>
+        </HBox>
+    </StackPane>
+</FlowPane>
